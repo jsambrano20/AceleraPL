@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Ordenadas</title>
+    <link href="./public/css/styles.css" rel="stylesheet" />
+    <link href="./public/css/menu.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --gap: 3rem;
+        }
+
+        .main-content {
+            max-width: 120rem;
+            margin: 0 auto;
+            padding: 10rem var(--gap);
+        }
+
+        .main-bg {
+            background: white;
+            background-image: url("assets/img/main-bg.svg");
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .conteudo {
+            display: block;
+        }
+
+        .section {
+            min-height: 100vh;
+
+        }
+
+        .intro-content {
+            position: relative;
+            display: grid;
+            min-width: 100vh;
+        }
+
+        .intro-text-content {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        h1 {
+            font-size: 6rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 6rem;
+            margin-bottom: 5rem;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-size: 5rem;
+        }
+
+        h4 {
+            font-size: 4.5rem;
+        }
+
+        h5 {
+            font-size: 3.5rem;
+        }
+
+        h6 {
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section id="home" class="main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h1>Conteudo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta earum qui non corporis, suscipit
+                    error temporibus ipsum nam doloremque eligendi sapiente dolorem repudiandae dolores beatae iste
+                    fugit explicabo quaerat laboriosam.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
