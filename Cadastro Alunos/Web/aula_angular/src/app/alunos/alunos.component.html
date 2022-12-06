@@ -1,0 +1,60 @@
+<section class="container">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/">Portal Alunos</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Lista Alunos</li>
+    </ol>
+  </nav>
+  <div class="card">
+    <div>
+      <div class="card-header">
+        <h5 class="card-title">Lista Alunos</h5>
+      </div>
+      <div class="card-body">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" placeholder="Digite o Nome a Pesquisar" [(ngModel)]="filtroLista">
+        </div>
+        <h3>{{filtroLista}}</h3>
+      </div>
+      <!-- <div class="card-footer">
+        <butaton (click)="getMsg()" type="button" class="btn btn-secondary"><i class="fa-solid fa-magnifying-glass"></i>
+          Pesquisar</button>
+      </div> -->
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th style="visibility: hidden;">Id</th>
+            <th>
+              <button (click)="eventoImg()" type="button" class="btn btn-outline-dark btn-sm">
+                {{!mostrarImg ? 'Exibir':'Ocultar'}}</button>
+            </th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>CPF</th>
+            <th>RG</th>
+            <th>Nascimento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let aluno of alunosFiltrado">
+            <td style="visibility: hidden;">{{aluno.id}}</td>
+            <td><img *ngIf="mostrarImg" src="/assets/{{aluno.imagemFoto}}" [style.width.px]="35" [style.margin.px]="5">
+            </td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.email}}</td>
+            <td>{{aluno.telefone}}</td>
+            <td>{{aluno.cpf}}</td>
+            <td>{{aluno.rg}}</td>
+            <td>{{aluno.nascimento | date : 'dd/MM/yyyy'}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</section>

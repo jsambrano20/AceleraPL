@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "xeyCII9RYc44z3/dfddvzWVHyI35G0sxB4EH6xeKpS1e9DOLdoEs8EUAAFujK1AR+SPG2EOCXQIpYIfH0c7X2g==",
+  "success": true,
+  "projectFilePath": "E:\\AcelaraPL\\AceleraPL\\Cadastro Alunos\\API\\src\\CadAlunos.API\\CadAlunos.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Joao Sambrano\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Joao Sambrano\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Joao Sambrano\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Joao Sambrano\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Joao Sambrano\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Joao Sambrano\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

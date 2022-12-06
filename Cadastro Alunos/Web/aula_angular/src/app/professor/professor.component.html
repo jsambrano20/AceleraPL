@@ -1,0 +1,47 @@
+<h3></h3>
+<section class="container">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/">Portal Alunos</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Lista Professores</li>
+    </ol>
+  </nav>
+  <div class="card">
+    <div>
+      <div class="card-header">
+        <h5 class="card-title">Lista Professores</h5>
+      </div>
+      <div class="card-body">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" placeholder="Digite o Nome a Pesquisar" [(ngModel)]="filtroLista">
+        </div>
+        <h3>{{filtroLista}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th style="visibility: hidden;">Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let professor of professoresFiltrado">
+            <td style="visibility: hidden;">{{professor.id}}</td>
+            <td>{{professor.nome}}</td>
+            <td>{{professor.email}}</td>
+            <td>{{professor.telefone}}</td>
+            <td>{{professor.horario}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</section>

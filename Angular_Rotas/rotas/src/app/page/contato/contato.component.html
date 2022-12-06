@@ -1,0 +1,14 @@
+<p>Contato works!</p>
+
+<form [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+  <input type="text" formControlName="nome"><br>
+  <br> {{cadastroForm.get('nome')?.value}}
+  <input type="text" formControlName="email"><br>
+  <br>{{cadastroForm.get('email')?.value}}
+
+  <br>{{cadastroForm.get('nome')?.errors | json}}
+  <br>{{cadastroForm.get('email')?.errors | json}}
+  <br>
+  <button>submit</button>
+
+</form>

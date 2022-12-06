@@ -1,0 +1,34 @@
+<p>Máterias Acelera</p>
+<section>
+  <div class="card">
+    <form action="">
+      <div class="card-body">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" placeholder="Digite o a matéria a Pesquisar">
+        </div>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-secondary"><i class="fa-solid fa-magnifying-glass"></i> Pesquisar</button>
+      </div>
+    </form>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Matéria</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let aula of aulas">
+            <td>{{aula.Materia}}</td>
+            <td>{{aula.data}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</section>

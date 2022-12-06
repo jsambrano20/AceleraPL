@@ -1,0 +1,28 @@
+<p>Aulas Acelera</p>
+<table>
+  <thead>
+    <tr>
+      <th>Materia</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <tr>
+      <td>{{aulas[0].Materia}}</td>
+      <td>{{aulas[0].data}}</td>
+    </tr>
+    <tr>
+      <td>{{aulas[1].Materia}}</td>
+      <td>{{aulas[1].data}}</td>
+    </tr>
+    <tr>
+      <td>{{aulas[2].Materia}}</td>
+      <td>{{aulas[2].data}}</td>
+    </tr> -->
+
+    <tr *ngFor="let aula of aulas">
+      <td>{{aula.Materia}}</td>
+      <td>{{aula.data}}</td>
+    </tr>
+  </tbody>
+</table>

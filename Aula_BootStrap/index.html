@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Boostrap</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+  <form>
+    <section class="container">
+      <h2>Dados Pessoais</h2>
+      <hr>
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <label>Celular</label>
+          <input class="form-control celular">
+        </div>
+        <div class="col-sm-4">
+          <label>CPF</label>
+          <div class="input-group mb-3">
+            <input class="form-control cpf" id="CPF" name="CPF">
+            <div class="input-group-append">
+              <span class="input-group-text" id="msgCPF"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <label>CNPJ</label>
+          <div class="input-group mb-3">
+            <input class="form-control cnpj" id="CNPJ" name="CNPJ">
+            <div class="input-group-append">
+              <span class="input-group-text" id="msgCNPJ"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <label>Razao Social</label>
+              <input class="form-control" id="razaoSocial">
+            </div>
+            <div class="col-sm-4">
+              <label>Nome Fantasia</label>
+              <input class="form-control" id="nomeFantasia">
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Endereços</h2>
+      <hr>
+      <div class="form-group row">
+        <div class="col-sm-2">
+          <label>CEP</label>
+          <div class="input-group mb-3">
+            <input class="form-control cep" id="CEP" name="CEP">
+            <div class="input-group-append">
+              <span class="input-group-text" id="msgCEP"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <label>Rua</label>
+          <input type="text" class="form-control" id="rua" name="rua">
+        </div>
+        <div class="col-sm-4">
+          <label>Complemento</label>
+          <input type="text" class="form-control" id="complemento" name="complemento">
+        </div>
+        <div class="col-sm-4">
+          <label>Bairro</label>
+          <input type="text" class="form-control" id="bairro" name="bairro">
+        </div>
+        <div class="col-sm-4">
+          <label>Cidade</label>
+          <input type="text" class="form-control" id="cidade" name="cidade">
+        </div>
+        <div class="col-sm-4">
+          <label>Estado</label>
+          <select class="form-control" id="estado" name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="EX">Estrangeiro</option>
+          </select>
+        </div>
+      </div>
+    </section>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="/assets/js/mask.js"></script>
+  <script src="/assets/js/dist/jquery.mask.js"></script>
+  <script src="/assets/js/dist/jquery.mask.min.js"></script>
+  <script src="/assets/js/service.js"></script>
+  <script src="/assets/js/utils.js"></script>
+
+
+</body>
+
+</html>

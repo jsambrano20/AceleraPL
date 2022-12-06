@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" autocomplete="off">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome Aqui" required>
+            <input type="hidden" id="oculto" name="oculto">
+
+        </p>
+        <p>
+            <label for="dev">Sou desenvolvedor?</label>
+            <input type="checkbox" id="dev" name="dev" value="sim">
+
+            <label for="dba">Sou DBA?</label>
+            <input type="checkbox" id="dba" name="dba" value="sim">
+        </p>
+        <p>
+            <label>Masculino</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+            <label>Feminino</label>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label>Outros</label>
+            <input type="radio" id="outros" name="sexo" value="outros">
+        </p>
+        <p>
+            <label>Data Nascimento</label>
+            <input type="date" id="dtnascimento" name="dtnascimento">
+        </p>
+        <p>
+            <label>Hora entrada</label>
+            <input type="datetime-local" id="hrentrada" name="hrentrada">
+        </p>
+        <p>
+            <label>Hora</label>
+            <input type="time" id="hora" name="hora">
+        </p>
+        <p>
+            <label for="number">Numero</label>
+            <input type="number" id="number" name="number" min="0" max="100" step="5">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+        </p>
+        <p>
+            <label>URL</label>
+            <input type="url" id="url" name="url">
+        </p>
+        <p>
+            <label>Color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label>File</label>
+            <input type="File" id="File" name="File" accept=".pdf,.xlsx">
+        </p>
+        <p>
+            <label>Comentários</label>
+            <textarea type="comentarios" id="comentarios" rows="4"></textarea>
+        </p>
+        <p>
+            <input type="range" id="range" name="range"></label>
+            <datalist id="lista">
+                <option value="0">0</option>
+                <option value="10">10</option>
+                <option value="100">100</option>
+                <option value="1000">1000</option>
+            </datalist>
+        </p>
+        <p>
+            <label>Select</label>
+
+            <select id="lista">
+                <option value="0">0</option>
+                <option value="10">10</option>
+                <option value="100">100</option>
+                <option value="1000">1000</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit" id="btEnviar" name="btEnviar">
+                Enviar
+            </button>
+            <button type="reset" id="btreset" name="btreset">
+                Reset
+            </button>
+        </p>
+    </form>
+</body>
+
+</html>

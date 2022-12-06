@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+nav ul{
+list-style: none;
+display: flex;
+}
+nav ul li a{
+  text-decoration: none;
+  color: red;
+}
+
+nav ul li{
+  padding: 10px 20px;
+}
+
+.active{
+  color: black;
+  font-weight: 700;
+}
