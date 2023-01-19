@@ -7,19 +7,25 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 //Compartilhados
 import { NavComponent } from './_shared/_layout/nav/nav.component';
 import { FooterComponent } from './_shared/_layout/footer/footer.component';
 
 //Paginas do sistema
-import { AlunosComponent } from './alunos/alunos.component';
+import { AlunosComponent } from './ComponentsAlunos/alunos/alunos.component';
 import { AulasComponent } from './aulas/aulas.component';
-import { ProfessorComponent } from './professor/professor.component';
-import { CadastroalunosComponent } from './cadastroalunos/cadastroalunos.component';
-import { CadastroprofessorComponent } from './cadastroprofessor/cadastroprofessor.component';
+import { ProfessorComponent } from './ComponentsProfessores/professor/professor.component';
+import { CadastroalunosComponent } from './ComponentsAlunos/cadastroalunos/cadastroalunos.component';
+import { CadastroprofessorComponent } from './ComponentsProfessores/cadastroprofessor/cadastroprofessor.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
+import { CadastroMateriaComponent } from './cadastro-materia/cadastro-materia.component';
+import { EditarAlunosComponent } from './ComponentsAlunos/editar-alunos/editar-alunos.component';
+import { EditarProfessorComponent } from './ComponentsProfessores/editar-professor/editar-professor.component';
+import { EditarMateriaComponent } from './editar-materia/editar-materia.component';
+import { ModalconfirmComponent } from './_shared/_utils/modalconfirm/modalconfirm.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +39,11 @@ import { ErrorComponent } from './error/error.component';
     CadastroprofessorComponent,
     DashboardComponent,
     ErrorComponent,
+    CadastroMateriaComponent,
+    EditarAlunosComponent,
+    EditarProfessorComponent,
+    EditarMateriaComponent,
+    ModalconfirmComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +52,7 @@ import { ErrorComponent } from './error/error.component';
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
     FormsModule,
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

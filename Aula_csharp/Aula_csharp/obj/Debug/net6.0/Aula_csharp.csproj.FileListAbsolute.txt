@@ -1,0 +1,15 @@
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\bin\Debug\net6.0\Aula_csharp.exe
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\bin\Debug\net6.0\Aula_csharp.deps.json
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\bin\Debug\net6.0\Aula_csharp.runtimeconfig.json
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\bin\Debug\net6.0\Aula_csharp.dll
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\bin\Debug\net6.0\Aula_csharp.pdb
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\Aula_csharp.csproj.AssemblyReference.cache
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\Aula_csharp.GeneratedMSBuildEditorConfig.editorconfig
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\Aula_csharp.AssemblyInfoInputs.cache
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\Aula_csharp.AssemblyInfo.cs
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\Aula_csharp.csproj.CoreCompileInputs.cache
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\Aula_csharp.dll
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\refint\Aula_csharp.dll
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\Aula_csharp.pdb
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\Aula_csharp.genruntimeconfig.cache
+E:\AceleraPL\AceleraPL\Aula_csharp\Aula_csharp\obj\Debug\net6.0\ref\Aula_csharp.dll

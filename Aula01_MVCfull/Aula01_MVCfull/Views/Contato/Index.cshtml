@@ -1,0 +1,61 @@
+﻿@model List<ContatoModel>;
+@{
+    ViewData["Title"] = "Cadastro de Contatos";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Cadastro Contatos</h1>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" asp-controller="Contato" asp-action="Criar">Adicionar novo Contato</a>
+    </div>
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["MensagemSucesso"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">                <span aria-hidden="true">&times;</span>            </button>
+        </div>
+    }
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["MensagemErro"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">                <span aria-hidden="true">&times;</span>            </button>
+        </div>
+    }
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Celular</th>
+                <th>E-mail</th>
+                <th>Nascimento</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.id</td>
+                        <td>@item.nome</td>
+                        <td>@item.celular</td>
+                        <td>@item.email</td>
+                        <td>@item.nascimento</td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Acao">
+                                <a class="btn btn-primary" asp-route-id="@item.id" asp-controller="Contato" asp-action="Editar">Editar</a>
+                                <a class="btn btn-danger" asp-route-id="@item.id" asp-controller="Contato" asp-action="Excluir">Excluir</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+</div>

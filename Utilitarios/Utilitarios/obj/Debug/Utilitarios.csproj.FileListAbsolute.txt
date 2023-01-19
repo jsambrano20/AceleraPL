@@ -1,0 +1,6 @@
+E:\AceleraPL\AceleraPL\Utilitarios\Utilitarios\bin\Debug\Utilitarios.dll
+E:\AceleraPL\AceleraPL\Utilitarios\Utilitarios\bin\Debug\Utilitarios.pdb
+E:\AceleraPL\AceleraPL\Utilitarios\Utilitarios\obj\Debug\Utilitarios.csproj.AssemblyReference.cache
+E:\AceleraPL\AceleraPL\Utilitarios\Utilitarios\obj\Debug\Utilitarios.csproj.CoreCompileInputs.cache
+E:\AceleraPL\AceleraPL\Utilitarios\Utilitarios\obj\Debug\Utilitarios.dll
+E:\AceleraPL\AceleraPL\Utilitarios\Utilitarios\obj\Debug\Utilitarios.pdb

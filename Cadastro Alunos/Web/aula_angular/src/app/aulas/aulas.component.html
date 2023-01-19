@@ -20,6 +20,57 @@
             <th>Matéria</th>
             <th>Data</th>
           </tr>
+          <section class="container">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/">Portal Alunos</a></li>
+                <li class="breadcrumb-item" aria-current="page">Cadastros</li>
+                <li class="breadcrumb-item active" aria-current="page">Materias</li>
+              </ol>
+            </nav>
+            <form #form="ngForm">
+              <article>
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title">Cadastrar Matéria</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="col-sm-6">
+                      <label for="materia">Matéria</label>
+                      <input type="text" name="materia" id="materia" class="form-control" ngModel>
+                    </div>
+                    <div class="col-sm-12">
+                      <label for="descricao">Descrição</label>
+                      <textarea class="form-control" name="descricao" id="descricao" rows="4"></textarea>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-success"></button>
+                  </div>
+                </div>
+              </article>
+            </form>
+            <article>
+              <div class="card">
+                <div class="card-body">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Matéria</th>
+                        <th>Descrição</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+          </section>
+
         </thead>
         <tbody>
           <tr *ngFor="let aula of aulas">

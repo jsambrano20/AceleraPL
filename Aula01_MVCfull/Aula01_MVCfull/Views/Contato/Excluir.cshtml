@@ -1,0 +1,11 @@
+﻿@model ContatoModel;
+@{
+}
+
+<div class="text-center">
+    <h3>Deseja realmente excluir o contato: @Model.nome </h3>
+    <div class="mb-3">
+        <a class="btn btn-danger btn-block" asp-route-id="@Model.id" asp-action="ExcluirID" asp-controller="Contato">Excluir</a>
+        <a class="btn btn-light btn-block" asp-action="Index" asp-controller="Contato">Voltar</a>
+    </div>
+</div>

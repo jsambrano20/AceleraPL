@@ -1,0 +1,67 @@
+<section class="container">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Portal Alunos</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Editar Alunos</li>
+        </ol>
+    </nav>
+    <form #form="ngForm" (ngSubmit)="submitForm(form)" method="post">
+        <article>
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Edição Alunos</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="">
+                            <input type="file" class="form-control" name="foto" id="foto" ngModel>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="hidden" name="id" [(ngModel)]="aluno.id" />
+                        <div class="col-sm-6 form-group">
+                            <label for="nome">Nome Aluno:</label>
+                            <input type="text" class="form-control" name="nome" id="nome" required ngModel
+                                [(ngModel)]="aluno.nome">
+                            <span class="is-invalid" *ngIf="form.invalid">Campo Obrigatorio</span>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="email">Email Aluno:</label>
+                            <input type="email" class="form-control" name="email" id="email" required ngModel
+                                [(ngModel)]="aluno.email">
+                            <span class="is-invalid" *ngIf="form.invalid">Campo Obrigatorio</span>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="telefone">Telefone Aluno:</label>
+                            <input type="text" class="form-control" name="telefone" maxlength="11" id="telefone" ngModel
+                                [(ngModel)]="aluno.telefone">
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <label for="cpf">CPF Aluno:</label>
+                            <input type="text" class="form-control" name="cpf" id="cpf" required maxlength="14" ngModel
+                                [(ngModel)]="aluno.cpf">
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <label for="rg">RG Aluno:</label>
+                            <input type="text" class="form-control" name="rg" id="rg" maxlength="10" ngModel
+                                [(ngModel)]="aluno.rg">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="nascimento">Nascimento Aluno:</label>
+                            <input type="date" class="form-control" name="nascimento" required id="nascimento" ngModel
+                                [ngModel]="aluno.nascimento | date:'yyyy-MM-dd'">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Salvar Dados</button>
+                </div>
+            </div>
+        </article>
+
+
+
+    </form>
+
+</section>

@@ -1,0 +1,41 @@
+<section class="container">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Portal Alunos</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Editar Materia</li>
+        </ol>
+    </nav>
+    <form #form="ngForm" (ngSubmit)="submitForm(form)" method="post">
+        <article>
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Edição Materia</h5>
+                </div>
+                <div class="card-body">
+                    <div class="col-md-9">
+                        <div class="col-sm-6 form-group">
+                            <input type="hidden" name="id" [(ngModel)]="materia.id" />
+                            <label for="materia">Materia:</label>
+                            <input type="text" class="form-control" name="materia" id="materia" required ngModel
+                                [(ngModel)]="materia.materia">
+                            <span class="is-invalid" *ngIf="form.invalid">Campo Obrigatorio</span>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="descricao">Descrição Materia:</label>
+                            <input type="text" class="form-control" name="descricao" id="descricao" required ngModel
+                                [(ngModel)]="materia.descricao">
+                            <span class="is-invalid" *ngIf="form.invalid">Campo Obrigatorio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Salvar Dados</button>
+                </div>
+            </div>
+        </article>
+
+
+
+    </form>
+
+</section>

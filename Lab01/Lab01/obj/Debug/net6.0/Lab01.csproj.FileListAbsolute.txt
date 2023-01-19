@@ -1,0 +1,15 @@
+E:\AceleraPL\AceleraPL\Lab01\Lab01\bin\Debug\net6.0\Lab01.exe
+E:\AceleraPL\AceleraPL\Lab01\Lab01\bin\Debug\net6.0\Lab01.deps.json
+E:\AceleraPL\AceleraPL\Lab01\Lab01\bin\Debug\net6.0\Lab01.runtimeconfig.json
+E:\AceleraPL\AceleraPL\Lab01\Lab01\bin\Debug\net6.0\Lab01.dll
+E:\AceleraPL\AceleraPL\Lab01\Lab01\bin\Debug\net6.0\Lab01.pdb
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\Lab01.csproj.AssemblyReference.cache
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\Lab01.GeneratedMSBuildEditorConfig.editorconfig
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\Lab01.AssemblyInfoInputs.cache
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\Lab01.AssemblyInfo.cs
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\Lab01.csproj.CoreCompileInputs.cache
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\Lab01.dll
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\refint\Lab01.dll
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\Lab01.pdb
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\Lab01.genruntimeconfig.cache
+E:\AceleraPL\AceleraPL\Lab01\Lab01\obj\Debug\net6.0\ref\Lab01.dll

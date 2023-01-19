@@ -1,0 +1,15 @@
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\bin\Debug\CadastroCliente.exe.config
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\bin\Debug\CadastroCliente.exe
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\bin\Debug\CadastroCliente.pdb
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\bin\Debug\Utilitarios.dll
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\bin\Debug\Utilitarios.pdb
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.csproj.AssemblyReference.cache
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.csproj.SuggestedBindingRedirects.cache
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.Form1.resources
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.frmCadastroCliente.resources
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.Properties.Resources.resources
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.csproj.GenerateResource.cache
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.csproj.CoreCompileInputs.cache
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.csproj.CopyComplete
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.exe
+E:\AceleraPL\AceleraPL\CadastroCliente\CadastroCliente\obj\Debug\CadastroCliente.pdb

@@ -1,0 +1,78 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <form action="" method="post">
+        <div class="form-group">
+            <label>Digitar um Número</label>
+            <input type="text" id="numero" name="numero" class="form-control"/>
+        </div>
+        <div class="form-control">
+            <button type="submit" class="btn btn-info"></button>
+        </div>
+
+    </form>
+
+@*    <p>Hoje é dia @DateTime.Now</p>
+    <p>
+        @{
+            var y = 10;
+            var x = 5;
+        }
+    </p>
+
+    <p>A soma de @x e @y @(x + y))</p>
+
+    <p>
+        <ul>
+
+            @for (int i = 0; i <= 8; i++)
+            {
+                <li>Valor de 1 é: @i</li>
+            }
+        </ul>
+    </p>
+
+    <p>
+        <ul>
+            @{
+                var numeros = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+                foreach (var item in numeros)
+                {
+                    <li> Valor de @item</li>
+                }
+            }
+        </ul>
+    </p>
+    <p>
+        @if (DateTime.Now.DayOfWeek == DayOfWeek.Wednesday)
+        {
+        <p> Hoje é quarta</p>
+        }
+        else
+        {
+        <p>Outro dia </p>
+        }
+
+    </p>
+
+    <p>
+        @switch (DateTime.Now.Day)
+        {
+            case 4:
+            <p> dia 4</p>
+                break;
+            case 5:
+            <p> dia 5</p>
+                break;
+            case 6:
+            <p> dia 6</p>
+                break;
+        }
+    </p>*@
+</div>
