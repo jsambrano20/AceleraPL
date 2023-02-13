@@ -1,0 +1,50 @@
+﻿@model Projeto02_Entity.Data.Notas
+
+@{
+    ViewBag.Title = "Pesquisar";
+}
+
+<h2>Pesquisar</h2>
+
+<div>
+    <h4>Notas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CodAluno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodAluno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodNot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodNot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataNota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

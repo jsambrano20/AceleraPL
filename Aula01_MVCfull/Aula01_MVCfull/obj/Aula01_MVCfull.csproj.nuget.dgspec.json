@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projetos\\repos\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj": {}
+    "E:\\AceleraPL\\AceleraPL\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj": {}
   },
   "projects": {
-    "E:\\Projetos\\repos\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj": {
+    "E:\\AceleraPL\\AceleraPL\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos\\repos\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj",
+        "projectUniqueName": "E:\\AceleraPL\\AceleraPL\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj",
         "projectName": "Aula01_MVCfull",
-        "projectPath": "E:\\Projetos\\repos\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj",
+        "projectPath": "E:\\AceleraPL\\AceleraPL\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj",
         "packagesPath": "C:\\Users\\Joao Sambrano\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos\\repos\\Aula01_MVCfull\\Aula01_MVCfull\\obj\\",
+        "outputPath": "E:\\AceleraPL\\AceleraPL\\Aula01_MVCfull\\Aula01_MVCfull\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

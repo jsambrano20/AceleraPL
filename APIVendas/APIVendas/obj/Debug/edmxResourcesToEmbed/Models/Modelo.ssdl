@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VendasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HistPedido">
+    <Key>
+      <PropertyRef Name="CodPed" />
+      <PropertyRef Name="NroSeq" />
+    </Key>
+    <Property Name="CodPed" Type="int" Nullable="false" />
+    <Property Name="NroSeq" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataOcorrencia" Type="datetime" />
+    <Property Name="Obs" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Pedidos">
+    <Key>
+      <PropertyRef Name="Cod" />
+    </Key>
+    <Property Name="Cod" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CPF" Type="char" MaxLength="11" />
+    <Property Name="NomeCliente" Type="varchar" MaxLength="50" />
+    <Property Name="Produto" Type="varchar" MaxLength="50" />
+    <Property Name="Quantidade" Type="int" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="VendasModelStoreContainer">
+    <EntitySet Name="HistPedido" EntityType="Self.HistPedido" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pedidos" EntityType="Self.Pedidos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

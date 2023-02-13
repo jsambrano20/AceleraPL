@@ -1,0 +1,32 @@
+﻿@model Projeto01.Models.Pedido
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pedido</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary();
+
+            @Html.LabelFor(B => B.ID)<br />
+            @Html.TextBoxFor(B => B.ID)<br />
+            @Html.LabelFor(B => B.Produto)<br />
+            @Html.TextBoxFor(B => B.Produto)<br />
+            @Html.ValidationMessageFor(B => B.Produto)
+            @Html.LabelFor(B => B.Quantidade)<br />
+            @Html.TextBoxFor(B => B.Quantidade)<br />
+            <input type="submit" value="Enviar" />
+
+        }
+    </div>
+</body>
+</html>

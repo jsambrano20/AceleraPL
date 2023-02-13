@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Projeto02_Entity.Data.Notas>
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+<p>
+    @Html.ActionLink("Incluir Nota", "Incluir")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CodAluno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodNot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataNota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nota)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodAluno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodNot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataNota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nota)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { Codigo = item.CodNot }) |
+            @Html.ActionLink("Pesquisar", "Pesquisar", new { Codigo = item.CodNot }) |
+            @Html.ActionLink("Excluir", "Excluir", new { Codigo = item.CodNot })
+        </td>
+    </tr>
+}
+
+</table>

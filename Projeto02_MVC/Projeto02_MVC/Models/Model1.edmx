@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="escolaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Alunos">
+          <Key>
+            <PropertyRef Name="Cod" />
+          </Key>
+          <Property Name="Cod" Type="int" Nullable="false" />
+          <Property Name="Nome" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Endereco" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Serie" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Notas">
+          <Key>
+            <PropertyRef Name="CodNot" />
+          </Key>
+          <Property Name="CodAluno" Type="int" Nullable="false" />
+          <Property Name="CodNot" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DataNota" Type="date" Nullable="false" />
+          <Property Name="Nota" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Notas__CodAluno__31EC6D26">
+          <End Role="Alunos" Type="Self.Alunos" Multiplicity="1" />
+          <End Role="Notas" Type="Self.Notas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alunos">
+              <PropertyRef Name="Cod" />
+            </Principal>
+            <Dependent Role="Notas">
+              <PropertyRef Name="CodAluno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="escolaModelStoreContainer">
+          <EntitySet Name="Alunos" EntityType="Self.Alunos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Notas" EntityType="Self.Notas" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Notas__CodAluno__31EC6D26" Association="Self.FK__Notas__CodAluno__31EC6D26">
+            <End Role="Alunos" EntitySet="Alunos" />
+            <End Role="Notas" EntitySet="Notas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="escolaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Alunos">
+          <Key>
+            <PropertyRef Name="Cod" />
+          </Key>
+          <Property Name="Cod" Type="Int32" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Endereco" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Serie" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Notas" Relationship="Self.FK__Notas__CodAluno__31EC6D26" FromRole="Alunos" ToRole="Notas" />
+        </EntityType>
+        <EntityType Name="Notas">
+          <Key>
+            <PropertyRef Name="CodNot" />
+          </Key>
+          <Property Name="CodAluno" Type="Int32" Nullable="false" />
+          <Property Name="CodNot" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DataNota" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Nota" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Alunos" Relationship="Self.FK__Notas__CodAluno__31EC6D26" FromRole="Notas" ToRole="Alunos" />
+        </EntityType>
+        <Association Name="FK__Notas__CodAluno__31EC6D26">
+          <End Role="Alunos" Type="Self.Alunos" Multiplicity="1" />
+          <End Role="Notas" Type="Self.Notas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alunos">
+              <PropertyRef Name="Cod" />
+            </Principal>
+            <Dependent Role="Notas">
+              <PropertyRef Name="CodAluno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EscolaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Alunos" EntityType="Self.Alunos" />
+          <EntitySet Name="Notas" EntityType="Self.Notas" />
+          <AssociationSet Name="FK__Notas__CodAluno__31EC6D26" Association="Self.FK__Notas__CodAluno__31EC6D26">
+            <End Role="Alunos" EntitySet="Alunos" />
+            <End Role="Notas" EntitySet="Notas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="escolaModelStoreContainer" CdmEntityContainer="EscolaEntities">
+          <EntitySetMapping Name="Alunos">
+            <EntityTypeMapping TypeName="escolaModel.Alunos">
+              <MappingFragment StoreEntitySet="Alunos">
+                <ScalarProperty Name="Cod" ColumnName="Cod" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+                <ScalarProperty Name="Serie" ColumnName="Serie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notas">
+            <EntityTypeMapping TypeName="escolaModel.Notas">
+              <MappingFragment StoreEntitySet="Notas">
+                <ScalarProperty Name="CodAluno" ColumnName="CodAluno" />
+                <ScalarProperty Name="CodNot" ColumnName="CodNot" />
+                <ScalarProperty Name="DataNota" ColumnName="DataNota" />
+                <ScalarProperty Name="Nota" ColumnName="Nota" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

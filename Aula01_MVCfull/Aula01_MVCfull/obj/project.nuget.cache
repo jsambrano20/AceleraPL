@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V/NDwSfHjshtbMXiCNvSj3wha5HmC2LMjkp4OzHmlSQZNzF1MbrGpyZsBsyOd0w8CrCpPba2vIEUOeSf/H4RAg==",
+  "dgSpecHash": "mKVQ82Qc8/gj0uhlvM6GgqczlBAH+xDqJd44RffVUofZ/nuoH4b7qZn30SbcvwDR6NCngaA5dxzfDh94utuXvw==",
   "success": true,
-  "projectFilePath": "E:\\Projetos\\repos\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj",
+  "projectFilePath": "E:\\AceleraPL\\AceleraPL\\Aula01_MVCfull\\Aula01_MVCfull\\Aula01_MVCfull.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joao Sambrano\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Joao Sambrano\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

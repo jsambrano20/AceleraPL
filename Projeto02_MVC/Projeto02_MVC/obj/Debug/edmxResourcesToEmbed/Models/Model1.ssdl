@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="escolaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Alunos">
+    <Key>
+      <PropertyRef Name="Cod" />
+    </Key>
+    <Property Name="Cod" Type="int" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Endereco" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Serie" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Notas">
+    <Key>
+      <PropertyRef Name="CodNot" />
+    </Key>
+    <Property Name="CodAluno" Type="int" Nullable="false" />
+    <Property Name="CodNot" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataNota" Type="date" Nullable="false" />
+    <Property Name="Nota" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Notas__CodAluno__31EC6D26">
+    <End Role="Alunos" Type="Self.Alunos" Multiplicity="1" />
+    <End Role="Notas" Type="Self.Notas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alunos">
+        <PropertyRef Name="Cod" />
+      </Principal>
+      <Dependent Role="Notas">
+        <PropertyRef Name="CodAluno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="escolaModelStoreContainer">
+    <EntitySet Name="Alunos" EntityType="Self.Alunos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notas" EntityType="Self.Notas" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Notas__CodAluno__31EC6D26" Association="Self.FK__Notas__CodAluno__31EC6D26">
+      <End Role="Alunos" EntitySet="Alunos" />
+      <End Role="Notas" EntitySet="Notas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
