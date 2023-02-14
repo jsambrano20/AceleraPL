@@ -76,3 +76,5 @@ E:\AceleraPL\AceleraPL\APIVendas\Cliente\obj\Debug\Cliente.csproj.CoreCompileInp
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\obj\Debug\Cliente.csproj.CopyComplete
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\obj\Debug\Cliente.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\obj\Debug\Cliente.pdb
+E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\Newtonsoft.Json.dll
+E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\Newtonsoft.Json.xml
