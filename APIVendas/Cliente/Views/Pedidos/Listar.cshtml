@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Cliente.Models.Pedidos>
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <h1>E-SHOP MODULO CLIENTE</h1>
+
+    <h3>Meus Pedidos - @Session["CPF"].ToString()</h3>
+
+    <p>
+        @Html.ActionLink("Novo Pedido", "NovoPedido")
+    </p>
+
+    <table class="table table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                &nbsp;
+            </th>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td width="200">
+                    @Html.DisplayFor(modelItem => item.Cod)
+                </td>
+                <td width="200">
+                    @Html.DisplayFor(modelItem => item.NomeCliente)
+                </td>
+                <td width="200">
+                    @Html.DisplayFor(modelItem => item.Produto)
+                </td>
+                <td width="200">
+                    @Html.DisplayFor(modelItem => item.Quantidade)
+                </td>
+                <td width="200">
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td width="200">
+                    @if (item.Status == "ENTREGUE")
+                    {
+
+                        @Html.ActionLink("Confirmar a Entrega",
+                    "ConfirmarPedidoEntregue/" + item.Cod.ToString())<br />
+
+                        @Html.ActionLink("Devolver Pedido",
+                        "DevolverPedidoCliente/" + item.Cod.ToString())
+                    }
+                    @if (item.Status == "FEITO")
+                    {
+                        @Html.ActionLink("Cancelar a Entrega",
+                    "CancelarPedidoNaoEnviado/" + item.Cod.ToString())
+                    }
+                </td>
+            </tr>
+
+        }
+
+    </table>
+</body>
+</html>
+

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIVendas", "APIVendas\APIV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cliente", "Cliente\Cliente.csproj", "{097DD7BB-E50D-49E1-BFD4-0F029C38EC60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transportadora", "Transportadora\Transportadora.csproj", "{B57F293C-9A81-4B6B-A31C-77E285C448D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vendedor", "Vendedor\Vendedor.csproj", "{41C81608-C72A-41F2-8EE1-394E365E499A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{097DD7BB-E50D-49E1-BFD4-0F029C38EC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{097DD7BB-E50D-49E1-BFD4-0F029C38EC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{097DD7BB-E50D-49E1-BFD4-0F029C38EC60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57F293C-9A81-4B6B-A31C-77E285C448D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57F293C-9A81-4B6B-A31C-77E285C448D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57F293C-9A81-4B6B-A31C-77E285C448D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57F293C-9A81-4B6B-A31C-77E285C448D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C81608-C72A-41F2-8EE1-394E365E499A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C81608-C72A-41F2-8EE1-394E365E499A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C81608-C72A-41F2-8EE1-394E365E499A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C81608-C72A-41F2-8EE1-394E365E499A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

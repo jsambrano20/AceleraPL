@@ -63,6 +63,10 @@ body {
   background-color: #fff;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }

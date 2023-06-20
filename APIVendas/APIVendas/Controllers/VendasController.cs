@@ -88,7 +88,7 @@ namespace APIVendas.Controllers
             catch (Exception err)
             {
                 return err.Message;
-           
+
             }
         }
 
@@ -116,6 +116,26 @@ namespace APIVendas.Controllers
             {
                 VendasCRUD.CancelarPedido(info);
                 return "Ok";
+            }
+            catch (Exception err)
+            {
+                return err.Message;
+
+            }
+        }
+
+        [HttpPut, Route("DevolvePedidoCliente")]
+        public string DevolvePedidoCliente(AvaliacaoPedido info)
+        {
+            try
+            {
+
+                VendasCRUD.DevolvePedidoCliente(info);
+
+
+                return "Ok";
+
+
             }
             catch (Exception err)
             {

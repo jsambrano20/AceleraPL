@@ -52,12 +52,14 @@ E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\roslyn\VBCSCompiler.exe
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\roslyn\VBCSCompiler.exe.config
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\Microsoft.Web.Infrastructure.dll
+E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\Newtonsoft.Json.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Helpers.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Mvc.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Razor.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Webpages.Deployment.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Webpages.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Webpages.Razor.dll
+E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\Newtonsoft.Json.xml
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Razor.xml
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Webpages.xml
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\System.Web.Webpages.Deployment.xml
@@ -76,5 +78,3 @@ E:\AceleraPL\AceleraPL\APIVendas\Cliente\obj\Debug\Cliente.csproj.CoreCompileInp
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\obj\Debug\Cliente.csproj.CopyComplete
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\obj\Debug\Cliente.dll
 E:\AceleraPL\AceleraPL\APIVendas\Cliente\obj\Debug\Cliente.pdb
-E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\Newtonsoft.Json.dll
-E:\AceleraPL\AceleraPL\APIVendas\Cliente\bin\Newtonsoft.Json.xml

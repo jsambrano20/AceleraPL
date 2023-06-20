@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 using System.Text;
+using System.Web.Services.Description;
 
 namespace Cliente.Controllers
 {
@@ -30,7 +31,7 @@ namespace Cliente.Controllers
             if (client == null)
             {
                 client = new HttpClient();
-                client.BaseAddress = new Uri("https://localhost:44389/");
+                client.BaseAddress = new Uri("https://localhost:44390/");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
         }
@@ -40,6 +41,7 @@ namespace Cliente.Controllers
         public async Task<ActionResult> Listar()
         {
             string API = "api/vendas/ListarPedidosCPF/" + Session["CPF"].ToString();
+
             var response = await client.GetAsync(API);
 
             if (response.IsSuccessStatusCode)
@@ -48,6 +50,7 @@ namespace Cliente.Controllers
 
                 //List<Pedidos> <====JSON
                 var lista = JsonConvert.DeserializeObject<Pedidos[]>(resultado).ToList();
+
                 return View(lista);
             }
             else
@@ -108,7 +111,7 @@ namespace Cliente.Controllers
 
             HttpContent content = new StringContent(json, Encoding.Unicode, "application/json");
 
-            var response = await client.PostAsync("api/vendas/AvaliarPedido", content);
+            var response = await client.PutAsync("api/vendas/AvaliarPedido", content);
 
 
             if (response.IsSuccessStatusCode)
@@ -116,6 +119,7 @@ namespace Cliente.Controllers
             else
                 throw new Exception(response.ReasonPhrase);
         }
+
 
         [HttpGet]
         public ActionResult CancelarPedidoNaoEnviado(string id)
@@ -138,7 +142,7 @@ namespace Cliente.Controllers
 
             HttpContent content = new StringContent(json, Encoding.Unicode, "application/json");
 
-            var response = await client.PostAsync("api/vendas/CancelarPedido", content);
+            var response = await client.PutAsync("api/vendas/CancelarPedido", content);
 
 
             if (response.IsSuccessStatusCode)
@@ -147,6 +151,39 @@ namespace Cliente.Controllers
                 throw new Exception(response.ReasonPhrase);
 
         }
+
+
+        [HttpGet]
+        public ActionResult DevolverPedidoCliente(string id)
+        {
+            Session["CodPedido"] = id;
+            AvaliacaoPedido Novo = new AvaliacaoPedido();
+            Novo.CodPedido = Convert.ToInt32(id);
+            Novo.Avaliacao = "Escreve sua Avaliação...";
+
+            return View(Novo);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> DevolverPedidoCliente(AvaliacaoPedido Mudou)
+        {
+
+            Mudou.CodPedido = Convert.ToInt32(Session["CodPedido"].ToString());
+            string json = JsonConvert.SerializeObject(Mudou);
+
+            HttpContent content = new StringContent(json, Encoding.Unicode, "application/json");
+
+            var response = await client.PutAsync("api/vendas/DevolvePedidoCliente", content);
+
+            if (response.IsSuccessStatusCode)
+                return RedirectToAction("Listar");
+            else
+                throw new Exception(response.ReasonPhrase);
+
+
+        }
+
+
 
 
     }

@@ -9,9 +9,5 @@ export class AppComponent implements OnInit {
   title = 'aula_angular';
 
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   alert('Joaozinho mil grau');
-    // }, 4000);
-    //alert('Bora bill');
-  }
+
 }

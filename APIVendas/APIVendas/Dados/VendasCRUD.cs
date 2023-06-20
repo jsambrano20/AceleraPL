@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using APIVendas.Models;
 using System.Data.Entity;
+using System.Drawing;
+using System.Runtime.CompilerServices;
+using System.ComponentModel.DataAnnotations;
 
 namespace APIVendas.Dados
 {
@@ -119,7 +122,7 @@ namespace APIVendas.Dados
         //Alteração de um Pedido
         public static void AlterarPedido(Pedidos Alterado)
         {
-            using(var ctx = new VendasEntities())
+            using (var ctx = new VendasEntities())
             {
                 ctx.Entry<Pedidos>(Alterado).State = EntityState.Modified;
                 ctx.SaveChanges();
@@ -171,6 +174,33 @@ namespace APIVendas.Dados
             Info.Avaliacao = "[CLIENTE] Motivo de Cancelamento: " + Info.Avaliacao;
 
             IncluirHistorico(Alt.Cod, Info.Avaliacao);
+        }
+
+        //Devolve Pedido
+        public static void DevolvePedidoCliente(AvaliacaoPedido Info)
+        {
+            var hist = ListarHistorico(Info.CodPedido);
+
+            HistPedido histPedido = (from h in hist
+                                     where h.Obs == "[Transportadora] Pedido entregue"
+                                     select h).First();
+
+            if (histPedido.DataOcorrencia.Value.AddDays(7) < DateTime.Now)
+            {
+                return;
+
+            }
+
+            Pedidos Alt = BuscarPedido(Info.CodPedido);
+            Alt.Status = "DEVOLVIDO";
+            AlterarPedido(Alt);
+
+            Info.Avaliacao = "[CLIENTE] Motivo de Devolução: " + Info.Avaliacao;
+
+            IncluirHistorico(Alt.Cod, Info.Avaliacao);
+
+
+
         }
 
 
